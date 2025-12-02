@@ -14,7 +14,7 @@ const Header = ({ activeTab, setActiveTab }) => (
       <div className="p-1 bg-indigo-50 rounded">
         <Zap size={20} className="text-indigo-600"/>
       </div>
-      Algoritmos<span>Pro</span>
+      Los 3 monos<span>Sabios</span>
     </h1>
     <div className="header-tabs">
       {[
