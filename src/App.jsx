@@ -202,7 +202,7 @@ const ProyectoReinas = () => {
             </div>
 
             <button className="btn-main btn-primary" onClick={resolver} disabled={cargando}>
-              {cargando ? 'Calculando...' : '⚡ Resolver Mapa'}
+              {cargando ? 'Calculando...' : 'Resolver Mapa'}
             </button>
           </ConfigSection>
           
