@@ -173,7 +173,7 @@ const ProyectoReinas = () => {
 
   const logData = historial.slice(0, paso + 1).map((h, i) => ({
     step: i + 1,
-    action: h.estado === 'colocando' ? '🟢 Colocar' : '🔴 Retroceder',
+    action: h.estado === 'colocando' ? 'Colocar' : 'Retroceder',
     detail: h.estado === 'colocando' ? 'Busca posición segura' : 'Camino cerrado',
     status: h.estado.toUpperCase()
   }));
@@ -245,8 +245,8 @@ const ProyectoReinas = () => {
                     className={`cell ${isBlack ? 'black' : 'white'}`}
                     style={{
                         backgroundColor: isAttacked 
-                            ? 'rgba(239, 68, 68, 0.25)' // Rojo suave si es atacada
-                            : (isBlack ? '#cbd5e1' : '#f8fafc'), // Color normal si es segura
+                            ? 'rgba(239, 68, 68, 0.25)' 
+                            : (isBlack ? '#cbd5e1' : '#f8fafc'), 
                         transition: 'background-color 0.2s ease'
                     }}
                   >
@@ -307,7 +307,7 @@ const ProyectoMontecarlo = () => {
                 setDiaActual(prev => {
                     const siguiente = prev + 1;
                     if (siguiente >= datosCompletos.length) {
-                        setAnimando(false); // Fin
+                        setAnimando(false);
                         return prev;
                     }
                     return siguiente;
@@ -351,7 +351,7 @@ const ProyectoMontecarlo = () => {
                   
                   <div className="mt-4">
                      <button className="btn-main btn-primary" onClick={simular} disabled={cargando}>
-                        {cargando ? 'Calculando...' : '📊 Proyectar Futuros'}
+                        {cargando ? 'Calculando...' : 'Proyectar Futuros'}
                      </button>
                   </div>
 
@@ -546,7 +546,7 @@ const ProyectoGenetico = () => {
                          </div>
                          
                          <button className={`btn-main ${corriendo ? 'btn-secondary' : 'btn-primary'}`} onClick={toggleEvolucion}>
-                            {corriendo ? '⏸ Pausar Evolución' : '🧬 Iniciar Evolución'}
+                            {corriendo ? '⏸ Pausar Evolución' : 'Iniciar Evolución'}
                          </button>
                          
                          <button className="btn-main btn-secondary" onClick={limpiarMapa}>
